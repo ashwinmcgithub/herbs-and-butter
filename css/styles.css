@@ -1136,7 +1136,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1.6fr 1.4fr;
   gap: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255,255,255,0.07);
@@ -1303,8 +1303,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .contact-grid { grid-template-columns: 1fr; }
   .map-wrapper { height: 320px; }
 
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .footer-brand { grid-column: span 2; }
+  .footer-grid { gap: 1.5rem; }
 
   .review-card { flex: 0 0 calc(50% - 0.75rem); }
 }
@@ -1385,10 +1384,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .value span { font-size: 0.78rem; }
 
   /* ── Section headers ── */
-  .section-header { margin-bottom: 1.75rem; }
-  .section-eyebrow { font-size: 0.7rem; margin-bottom: 0.5rem; }
-  .section-heading { font-size: clamp(1.5rem, 6vw, 2rem); margin-bottom: 0.5rem; }
-  .section-desc { font-size: 0.88rem; }
+  .section-header { margin-bottom: 1.25rem; }
+  .section-eyebrow { font-size: 0.67rem; margin-bottom: 0.35rem; letter-spacing: 0.14em; }
+  .section-heading { font-size: clamp(1.3rem, 5.5vw, 1.8rem); margin-bottom: 0.35rem; line-height: 1.25; }
+  .section-desc { font-size: 0.82rem; line-height: 1.6; }
 
   /* ── Signatures — horizontal scroll strip ── */
   .signatures { padding-block: 2rem; }
@@ -1418,19 +1417,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .sig-price { font-size: 1.1rem; }
 
   /* ── Menu ── */
-  .menu-section { padding-block: 2.5rem; }
-  .menu-tabs { gap: 0.3rem; overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 0.25rem; scrollbar-width: none; }
+  .menu-section { padding-block: 2rem; }
+  .menu-tabs { gap: 0.3rem; overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 0.25rem; scrollbar-width: none; margin-bottom: 1.25rem; }
   .menu-tabs::-webkit-scrollbar { display: none; }
-  .tab-btn { padding: 0.5rem 0.9rem; font-size: 0.78rem; white-space: nowrap; flex-shrink: 0; }
+  .tab-btn { padding: 0.45rem 0.85rem; font-size: 0.75rem; white-space: nowrap; flex-shrink: 0; border-width: 1.5px; }
   .tab-btn i { display: none; }
-  .menu-grid { grid-template-columns: 1fr; gap: 0.5rem; }
-  .menu-item { padding: 0.9rem 1rem; }
-  .menu-item-header h4 { font-size: 0.9rem; margin-bottom: 0.1rem; }
-  .menu-item-header p { font-size: 0.75rem; }
-  .price { font-size: 0.95rem; }
-  .tag { font-size: 0.58rem; padding: 0.15rem 0.45rem; }
-  .menu-footer { gap: 0.75rem; margin-top: 1.5rem; }
-  .menu-footer p { font-size: 0.78rem; }
+  /* Single-line items: name left, price right, description hidden */
+  .menu-grid { grid-template-columns: 1fr; gap: 0.25rem; }
+  .menu-item { padding: 0.65rem 0.85rem; border-radius: 8px; }
+  .menu-item-header { align-items: center; gap: 0.75rem; }
+  .menu-item-header h4 { font-size: 0.85rem; margin-bottom: 0; }
+  .menu-item-header p { display: none; }   /* hide descriptions on mobile */
+  .price { font-size: 0.9rem; }
+  .tag { font-size: 0.56rem; padding: 0.12rem 0.4rem; }
+  .menu-footer { gap: 0.6rem; margin-top: 1.25rem; }
+  .menu-footer p { font-size: 0.75rem; }
 
   /* ── Gallery bento ── */
   .gallery-section { padding-block: 2rem; }
@@ -1470,39 +1471,47 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .store-ctas .btn { padding: 0.65rem 1rem; font-size: 0.82rem; }
 
   /* ── Reviews ── */
-  .reviews-section { padding-block: 2.5rem; }
-  .big-rating { font-size: 2.5rem; }
-  .rating-summary { flex-direction: row; gap: 1rem; text-align: left; justify-content: center; }
-  .rating-detail span { font-size: 0.75rem; }
-  .review-card { flex: 0 0 100%; padding: 1.25rem; }
-  .review-text { font-size: 0.9rem; margin-bottom: 1rem; }
-  .reviewer strong { font-size: 0.85rem; }
-  .reviewer span { font-size: 0.72rem; }
-  .reviewer-avatar { width: 36px; height: 36px; font-size: 0.88rem; }
-  .slider-controls { margin-top: 1.5rem; gap: 0.75rem; }
+  .reviews-section { padding-block: 2rem; }
+  .big-rating { font-size: 2.2rem; }
+  .rating-summary { flex-direction: row; gap: 0.75rem; text-align: left; justify-content: center; margin-top: 0.5rem; }
+  .rating-detail .stars { font-size: 0.9rem; }
+  .rating-detail span { font-size: 0.72rem; }
+  .review-card { flex: 0 0 100%; padding: 1rem; border-radius: 12px; }
+  .review-stars { font-size: 0.82rem; margin-bottom: 0.6rem; }
+  .review-text { font-size: 0.85rem; margin-bottom: 0.85rem; line-height: 1.6; }
+  .reviewer strong { font-size: 0.82rem; }
+  .reviewer span { font-size: 0.7rem; }
+  .reviewer-avatar { width: 32px; height: 32px; font-size: 0.82rem; }
+  .slider-controls { margin-top: 1.25rem; gap: 0.6rem; }
+  .slider-btn { width: 36px; height: 36px; font-size: 0.8rem; }
 
   /* ── Contact ── */
-  .contact-section { padding-block: 2.5rem; }
-  .contact-grid { gap: 1.5rem; }
-  .info-card { padding: 1rem; gap: 0.75rem; }
-  .info-icon { width: 36px; height: 36px; font-size: 0.88rem; }
-  .info-content h4 { font-size: 0.72rem; margin-bottom: 0.25rem; }
-  .info-content p, .hours-row { font-size: 0.82rem; }
-  .contact-ctas { flex-direction: row; flex-wrap: wrap; margin-top: 1rem; margin-bottom: 1.25rem; }
-  .contact-ctas .btn { flex: 1; min-width: 120px; justify-content: center; padding: 0.7rem 1rem; font-size: 0.82rem; }
-  .map-wrapper { height: 240px; border-radius: 12px; }
-  .social-links a { width: 36px; height: 36px; font-size: 0.88rem; }
+  .contact-section { padding-block: 2rem; }
+  .contact-grid { gap: 1.25rem; }
+  .info-card { padding: 0.85rem 1rem; gap: 0.65rem; margin-bottom: 0.6rem; border-radius: 10px; }
+  .info-icon { width: 32px; height: 32px; font-size: 0.8rem; flex-shrink: 0; }
+  .info-content h4 { font-size: 0.68rem; margin-bottom: 0.2rem; }
+  .info-content p, .hours-row { font-size: 0.8rem; line-height: 1.5; }
+  .hours-row { padding-block: 0.1rem; }
+  .hours-note { font-size: 0.72rem; }
+  .contact-ctas { flex-direction: row; flex-wrap: wrap; margin-top: 0.85rem; margin-bottom: 1rem; gap: 0.5rem; }
+  .contact-ctas .btn { flex: 1; min-width: 110px; justify-content: center; padding: 0.65rem 0.85rem; font-size: 0.8rem; }
+  .map-wrapper { height: 200px; border-radius: 10px; }
+  .map-badge { font-size: 0.78rem; }
+  .social-links { gap: 0.5rem; }
+  .social-links a { width: 34px; height: 34px; font-size: 0.82rem; }
 
-  /* ── Footer — minimal ── */
-  .footer { padding-block: 2rem 0; }
-  .footer-grid { display: flex; flex-direction: column; gap: 0; padding-bottom: 0; border-bottom: none; }
-  .footer-brand { order: 0; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .footer-brand p { font-size: 0.82rem; max-width: 100%; margin-bottom: 1rem; }
-  .footer-links, .footer-menu-preview { display: none; }  /* hide extra link columns on mobile */
-  .footer-contact { order: 1; padding-block: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .footer-contact h5 { font-size: 0.7rem; margin-bottom: 0.75rem; }
-  .footer-contact p { font-size: 0.8rem; gap: 0.5rem; margin-bottom: 0.5rem; }
-  .footer-bottom { flex-direction: column; text-align: center; padding-block: 1rem; gap: 0.25rem; font-size: 0.75rem; }
+  /* ── Footer — minimal 2-col stacked ── */
+  .footer { padding-block: 1.75rem 0; }
+  .footer-grid { grid-template-columns: 1fr; gap: 0; padding-bottom: 0; border-bottom: none; }
+  .footer-brand { padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .footer-brand .footer-logo-img { height: 44px; }
+  .footer-brand p { font-size: 0.8rem; max-width: 100%; margin-bottom: 0.85rem; line-height: 1.6; }
+  .footer-social a { width: 32px; height: 32px; font-size: 0.82rem; }
+  .footer-contact { padding-block: 1rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .footer-contact h5 { font-size: 0.68rem; margin-bottom: 0.6rem; }
+  .footer-contact p { font-size: 0.78rem; gap: 0.4rem; margin-bottom: 0.4rem; }
+  .footer-bottom { flex-direction: column; text-align: center; padding-block: 0.85rem; gap: 0.2rem; font-size: 0.72rem; }
 
   /* ── Misc ── */
   .back-to-top { display: none; }
