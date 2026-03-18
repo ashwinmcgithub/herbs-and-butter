@@ -27,11 +27,7 @@
   <nav id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <span class="logo-icon"><i class="fas fa-leaf"></i></span>
-        <div class="logo-text">
-          <span class="logo-main">Herbs &amp; Butter</span>
-          <span class="logo-sub">Continental Cafe</span>
-        </div>
+        <img src="assets/logo.jpg" alt="Herbs and Butter" class="nav-logo-img" />
       </a>
 
       <ul class="nav-links" id="navLinks">
@@ -71,6 +67,57 @@
         loading="eager"
       />
       <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Animated Herb Particles -->
+    <div class="herb-particles" aria-hidden="true">
+      <!-- Bay leaf -->
+      <svg class="herb h1" viewBox="0 0 24 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 58 C4 46 2 30 4 16 C6 6 12 2 12 2 C12 2 18 6 20 16 C22 30 20 46 12 58Z" fill="currentColor"/>
+        <line x1="12" y1="2" x2="12" y2="58" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+      </svg>
+      <!-- Sprig -->
+      <svg class="herb h2" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="25" y1="70" x2="25" y2="15" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+        <path d="M25 42 C15 37 10 24 16 14 C20 8 25 10 25 10Z" fill="currentColor"/>
+        <path d="M25 42 C35 37 40 24 34 14 C30 8 25 10 25 10Z" fill="currentColor" opacity="0.8"/>
+        <path d="M25 22 C18 18 15 10 20 5 C22 3 25 4 25 4Z" fill="currentColor" opacity="0.7"/>
+        <path d="M25 22 C32 18 35 10 30 5 C28 3 25 4 25 4Z" fill="currentColor" opacity="0.6"/>
+      </svg>
+      <!-- Round leaf -->
+      <svg class="herb h3" viewBox="0 0 40 46" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 44 C6 38 2 24 6 12 C10 2 20 0 20 0 C20 0 30 2 34 12 C38 24 34 38 20 44Z" fill="currentColor"/>
+        <line x1="20" y1="0" x2="20" y2="44" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <line x1="10" y1="20" x2="20" y2="12" stroke="rgba(255,255,255,0.1)" stroke-width="0.7"/>
+        <line x1="30" y1="20" x2="20" y2="12" stroke="rgba(255,255,255,0.1)" stroke-width="0.7"/>
+      </svg>
+      <!-- Bay leaf small -->
+      <svg class="herb h4" viewBox="0 0 24 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 58 C4 46 2 30 4 16 C6 6 12 2 12 2 C12 2 18 6 20 16 C22 30 20 46 12 58Z" fill="currentColor"/>
+        <line x1="12" y1="2" x2="12" y2="58" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+      </svg>
+      <!-- Sprig large -->
+      <svg class="herb h5" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="25" y1="70" x2="25" y2="15" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+        <path d="M25 42 C15 37 10 24 16 14 C20 8 25 10 25 10Z" fill="currentColor"/>
+        <path d="M25 42 C35 37 40 24 34 14 C30 8 25 10 25 10Z" fill="currentColor" opacity="0.8"/>
+        <path d="M25 22 C18 18 15 10 20 5 C22 3 25 4 25 4Z" fill="currentColor" opacity="0.7"/>
+        <path d="M25 22 C32 18 35 10 30 5 C28 3 25 4 25 4Z" fill="currentColor" opacity="0.6"/>
+      </svg>
+      <!-- Round leaf small -->
+      <svg class="herb h6" viewBox="0 0 40 46" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 44 C6 38 2 24 6 12 C10 2 20 0 20 0 C20 0 30 2 34 12 C38 24 34 38 20 44Z" fill="currentColor"/>
+        <line x1="20" y1="0" x2="20" y2="44" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      </svg>
+      <svg class="herb h7" viewBox="0 0 24 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 58 C4 46 2 30 4 16 C6 6 12 2 12 2 C12 2 18 6 20 16 C22 30 20 46 12 58Z" fill="currentColor"/>
+        <line x1="12" y1="2" x2="12" y2="58" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+      </svg>
+      <svg class="herb h8" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="25" y1="70" x2="25" y2="15" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+        <path d="M25 42 C15 37 10 24 16 14 C20 8 25 10 25 10Z" fill="currentColor"/>
+        <path d="M25 42 C35 37 40 24 34 14 C30 8 25 10 25 10Z" fill="currentColor" opacity="0.8"/>
+      </svg>
     </div>
 
     <div class="hero-content">
@@ -704,70 +751,228 @@
 
 
   <!-- ═══════════════════════════════════════
-       GALLERY
+       BENTO GALLERY
   ═══════════════════════════════════════ -->
-  <section id="gallery" class="gallery-section section-tint">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-eyebrow">The Herbs &amp; Butter Experience</p>
-        <h2 class="section-heading">Taste It With Your Eyes</h2>
-        <p class="section-desc">Cozy corners, vibrant plates &amp; moments made for savouring.</p>
+  <section id="gallery" class="gallery-section">
+    <div class="gallery-header reveal">
+      <p class="section-eyebrow">Our Story in Motion</p>
+      <h2 class="section-heading">Live. Eat. Repeat.</h2>
+      <p class="section-desc">Real moments from our kitchens, our tables, and our community.</p>
+      <!-- Filter -->
+      <div class="gallery-filter">
+        <button class="gf-btn active" data-filter="all">All</button>
+        <button class="gf-btn" data-filter="video"><i class="fas fa-play-circle"></i> Videos</button>
+        <button class="gf-btn" data-filter="photo"><i class="fas fa-image"></i> Photos</button>
       </div>
+    </div>
 
-      <div class="gallery-masonry reveal">
-        <div class="gallery-item tall">
-          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80&auto=format&fit=crop" alt="Continental food spread" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop" alt="Artisan pizza" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1551183053-bf91798d047e?w=600&q=80&auto=format&fit=crop" alt="Fresh pasta" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item wide">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Elegant plating" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item tall">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&auto=format&fit=crop" alt="Artisan coffee" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80&auto=format&fit=crop" alt="Gourmet burger" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80&auto=format&fit=crop" alt="Dessert plating" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600&q=80&auto=format&fit=crop" alt="Beef lasagna" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="gallery-item wide">
-          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80&auto=format&fit=crop" alt="Cafe interior" loading="lazy" />
-          <div class="gallery-hover"><i class="fas fa-expand-alt"></i></div>
+    <div class="bento-grid" id="bentoGrid">
+
+      <!-- 1: Large feature video — experience -->
+      <div class="bento-item bento-1" data-type="video" data-src="assets/vid-experience.mp4" data-title="Not Just Food… It's an Experience" data-index="0">
+        <video src="assets/vid-experience.mp4" muted loop preload="metadata" playsinline></video>
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-play"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge video-badge"><i class="fas fa-video"></i> Video</span>
+            <h4>Not Just Food… It's an Experience</h4>
+          </div>
         </div>
       </div>
 
-      <div class="gallery-footer reveal">
-        <a href="https://www.instagram.com/herbs_and_butter/" target="_blank" rel="noopener" class="btn btn-outline-dark">
-          <i class="fab fa-instagram"></i> Follow us on Instagram
-        </a>
+      <!-- 2: Photo - burger -->
+      <div class="bento-item bento-2" data-type="photo" data-src="assets/img-burger.jpg" data-title="Burgers Always Look Beautiful From Top" data-index="1">
+        <img src="assets/img-burger.jpg" alt="Gourmet burger top view" loading="lazy" />
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-expand-alt"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge photo-badge"><i class="fas fa-image"></i> Photo</span>
+            <h4>Burgers Always Look Beautiful From Top</h4>
+          </div>
+        </div>
       </div>
+
+      <!-- 3: Tall video - boba -->
+      <div class="bento-item bento-3" data-type="video" data-src="assets/vid-boba.mp4" data-title="Payasam Boba — A Kerala Twist" data-index="2">
+        <video src="assets/vid-boba.mp4" muted loop preload="metadata" playsinline></video>
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-play"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge video-badge"><i class="fas fa-video"></i> Video</span>
+            <h4>Payasam Boba — A Kerala Twist</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Photo - kochi milestone -->
+      <div class="bento-item bento-4" data-type="photo" data-src="assets/img-kochi-1.jpg" data-title="1.5 Years in Kochi — Thank You!" data-index="3">
+        <img src="assets/img-kochi-1.jpg" alt="Herbs and Butter Kochi milestone" loading="lazy" />
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-expand-alt"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge photo-badge"><i class="fas fa-image"></i> Photo</span>
+            <h4>1.5 Years in Kochi — Thank You!</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Video - calzone -->
+      <div class="bento-item bento-5" data-type="video" data-src="assets/vid-calzone.mp4" data-title="Calzone a Day Keep Your Stress Away" data-index="4">
+        <video src="assets/vid-calzone.mp4" muted loop preload="metadata" playsinline></video>
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-play"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge video-badge"><i class="fas fa-video"></i> Video</span>
+            <h4>Calzone a Day…</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: Wide video - pizza pasta -->
+      <div class="bento-item bento-6" data-type="video" data-src="assets/vid-pizza-pasta.mp4" data-title="It's a Pizza-Pasta Day" data-index="5">
+        <video src="assets/vid-pizza-pasta.mp4" muted loop preload="metadata" playsinline></video>
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-play"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge video-badge"><i class="fas fa-video"></i> Video</span>
+            <h4>It's a Pizza-Pasta Day</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: Video - pizza -->
+      <div class="bento-item bento-7" data-type="video" data-src="assets/vid-pizza.mp4" data-title="Hot Out of the Oven" data-index="6">
+        <video src="assets/vid-pizza.mp4" muted loop preload="metadata" playsinline></video>
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-play"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge video-badge"><i class="fas fa-video"></i> Video</span>
+            <h4>Hot Out of the Oven</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8: Video - desserts -->
+      <div class="bento-item bento-8" data-type="video" data-src="assets/vid-desserts.mp4" data-title="Cravings: Desserts Edition" data-index="7">
+        <video src="assets/vid-desserts.mp4" muted loop preload="metadata" playsinline></video>
+        <div class="bento-overlay">
+          <div class="bento-play"><i class="fas fa-play"></i></div>
+          <div class="bento-meta">
+            <span class="bento-badge video-badge"><i class="fas fa-video"></i> Video</span>
+            <h4>Cravings: Desserts Edition</h4>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end bento-grid -->
+
+    <div class="gallery-footer reveal">
+      <a href="https://www.instagram.com/herbs_and_butter/" target="_blank" rel="noopener" class="btn btn-outline-dark">
+        <i class="fab fa-instagram"></i> Follow @herbs_and_butter
+      </a>
     </div>
   </section>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
-      <i class="fas fa-times"></i>
-    </button>
-    <img src="" alt="Gallery image" id="lightboxImg" />
+  <!-- Media Modal -->
+  <div class="media-modal" id="mediaModal" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <button class="modal-nav modal-next" id="modalNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      <div class="modal-media-wrap" id="modalMediaWrap"></div>
+      <div class="modal-footer">
+        <p class="modal-title" id="modalTitle"></p>
+        <span class="modal-counter" id="modalCounter"></span>
+      </div>
+    </div>
   </div>
+
+
+  <!-- ═══════════════════════════════════════
+       TWO STORES
+  ═══════════════════════════════════════ -->
+  <section class="stores-section section-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Two Locations</p>
+        <h2 class="section-heading">Find Your Nearest<br /><em>Herbs &amp; Butter</em></h2>
+        <p class="section-desc">One passion, two locations — serving the same hand-crafted continental experience across Kerala.</p>
+      </div>
+
+      <div class="stores-grid">
+
+        <div class="store-card reveal-left">
+          <div class="store-img">
+            <img src="assets/img-kochi-2.jpg" alt="Herbs and Butter Thodupuzha" loading="lazy" />
+            <div class="store-pill flagship"><i class="fas fa-store"></i> Flagship Store</div>
+          </div>
+          <div class="store-body">
+            <span class="store-type-tag">Full Dine-In Cafe</span>
+            <h3>Thodupuzha, Idukki</h3>
+            <p>The original Herbs &amp; Butter. The place where it all began — walk in, sit down, and let us take care of the rest.</p>
+            <div class="store-details">
+              <div class="store-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Near Government Hospital Junction,<br />Thodupuzha, Idukki, Kerala 685 584</span>
+              </div>
+              <div class="store-detail">
+                <i class="fas fa-clock"></i>
+                <span>Daily · 10:00 AM – 10:30 PM</span>
+              </div>
+              <div class="store-detail">
+                <i class="fas fa-utensils"></i>
+                <span>Full Menu · Dine-In · Takeaway</span>
+              </div>
+            </div>
+            <div class="store-ctas">
+              <a href="https://maps.google.com/?q=Thodupuzha+Kerala" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fas fa-directions"></i> Get Directions
+              </a>
+              <a href="https://wa.me/919400000000?text=Hi%2C+I%27d+like+to+book+a+table+at+the+Thodupuzha+store!" target="_blank" rel="noopener" class="btn btn-outline-dark">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card reveal-right">
+          <div class="store-img">
+            <img src="assets/img-kochi-1.jpg" alt="Herbs and Butter Kochi Cloud Kitchen" loading="lazy" />
+            <div class="store-pill kochi"><i class="fas fa-motorcycle"></i> Cloud Kitchen</div>
+          </div>
+          <div class="store-body">
+            <span class="store-type-tag">Delivery · Cloud Kitchen</span>
+            <h3>Kochi / Ernakulam</h3>
+            <p>Our Kochi cloud kitchen delivers the same hand-crafted continental magic straight to your door. Now serving across Ernakulam.</p>
+            <div class="store-details">
+              <div class="store-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ernakulam, Kochi, Kerala</span>
+              </div>
+              <div class="store-detail">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Order via Swiggy, Zomato &amp; WhatsApp</span>
+              </div>
+              <div class="store-detail">
+                <i class="fas fa-phone"></i>
+                <span><a href="tel:+919400000000">+91 94000 00000</a></span>
+              </div>
+            </div>
+            <div class="store-ctas">
+              <a href="https://wa.me/919400000000?text=Hi%2C+I%27d+like+to+order+from+Herbs+and+Butter+Kochi!" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> Order Now
+              </a>
+              <a href="https://maps.google.com/?q=Ernakulam+Kochi+Kerala" target="_blank" rel="noopener" class="btn btn-outline-dark">
+                <i class="fas fa-directions"></i> Find Us
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
   <!-- ═══════════════════════════════════════
@@ -1015,11 +1220,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#home" class="nav-logo footer-logo">
-            <span class="logo-icon"><i class="fas fa-leaf"></i></span>
-            <div class="logo-text">
-              <span class="logo-main">Herbs &amp; Butter</span>
-              <span class="logo-sub">Continental Cafe</span>
-            </div>
+            <img src="assets/logo.jpg" alt="Herbs and Butter" class="nav-logo-img footer-logo-img" />
           </a>
           <p>Bringing the warmth of authentic continental cuisine to the heart of Thodupuzha since 2019.</p>
           <div class="footer-social">
